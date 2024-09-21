@@ -1,0 +1,70 @@
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.car-card {
+  box-shadow: 0 4px 8px rgba(127, 27, 226, 0.1);
+  background-color: #e0dbdb71;
+  padding: 16px;
+  margin: 10px;
+  width: 250px; /* Defina a largura dos cards */
+  text-align: center;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden; /* Garante que nada saia dos limites do card */
+}
+
+.car-card img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do card */
+  height: 150px; /* Defina uma altura fixa para as imagens */
+  object-fit: cover; /* Ajusta a imagem dentro dos limites */
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  width: 300px; /* Define a largura desejada da barra de pesquisa */
+  padding: 10px; /* Aumenta o espaço interno da barra */
+  border: 1px solid #ccc; /* Borda da barra */
+  border-radius: 5px; /* Cantos arredondados */
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  margin-bottom: 16px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+
+}
+
+button {
+  background-color: #007bff9a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 50px;
+}
+
+.favorited {
+  color: red;
+}
+
+.not-favorited {
+  color: lightgray;
+}

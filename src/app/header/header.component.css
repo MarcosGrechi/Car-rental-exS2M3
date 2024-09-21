@@ -1,0 +1,42 @@
+header {
+  background-color: rgba(115, 9, 221, 0.849);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Alinha os itens verticalmente */
+}
+
+nav {
+  display: flex; /* Torna o nav um contêiner flexível */
+  justify-content: space-between; /* Distribui espaço entre os itens */
+  width: 100%; /* Garante que o nav ocupe toda a largura do header */
+  max-width: 1200px; /* Limita a largura máxima do nav */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Torna a lista um contêiner flexível */
+  justify-content: center; /* Centraliza os itens da lista */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.favorites {
+  color: white;
+  font-size: 18px;
+  margin-right: 20px; /* Adiciona espaço entre o menu e o ícone de favoritos */
+}

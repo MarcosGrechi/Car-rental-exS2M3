@@ -1,0 +1,20 @@
+<div *ngIf="carro" class="car-details-container">
+    <div class="car-details-card">
+      <img [src]="carro.image" alt="Imagem de {{ carro.name }}" class="car-image">
+      <h2>{{ carro.name }}</h2>
+      <p><strong>Ano de Fabricação:</strong> {{ carro.year | year }}</p>
+      <p><strong>Tipo:</strong> {{ carro.type }}</p>
+      <p><strong>Preço por dia:</strong> R$ {{ carro.pricePerDay }}</p>
+      <p><strong>Descrição:</strong></p>
+      <p>{{ carro.description }}</p>
+  
+      <!-- Ícone de coração para adicionar/remover favoritos -->
+      <button class="favorite-button" (click)="toggleFavorito()">
+        <i [ngClass]="isFavorito ? 'fas fa-heart' : 'far fa-heart'" class="favorite-icon"></i>
+        {{ isFavorito ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos' }}
+      </button>
+  
+      <button class="rent-button">Alugar</button>
+    </div>
+  </div>
+  

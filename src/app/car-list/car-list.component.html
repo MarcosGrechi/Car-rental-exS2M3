@@ -1,0 +1,14 @@
+<div>
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Pesquisar carros..." (input)="searchCars()" class="search-input" />
+</div>
+
+<div class="car-list">
+  <div *ngFor="let car of filteredCars" class="car-card">
+    <img [src]="car.image" alt="{{ car.name }}">
+    <h2>{{ car.name }}</h2>
+    <p>Ano: {{ car.year | date: 'yyyy' }}</p>
+    <p>Preço: R$ {{ car.pricePerDay }}</p>
+    <p *ngIf="car.favorito === 'Sim'">❤️ Favorito</p>
+    <button (click)="redirectTo(car.id)">Ver Mais</button>
+  </div>
+</div>
